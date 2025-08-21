@@ -16,7 +16,7 @@ A React Native app built with [Nativ](https://github.com/alloc/nativ), Expo, and
    > **Note:** Requires Node.js v23.6+ for TypeScript support
 
    ```bash
-   node setup.ts
+   node setup.mts
    ```
 
    This will:
