@@ -13,7 +13,7 @@ const expo: ExpoConfig = {
     bundleIdentifier: 'com.example.mynativapp',
     icon: {
       dark: './assets/images/icon-dark.png',
-      light: './assets/images/icon-light.png',
+      light: './assets/images/icon.png',
       tinted: './assets/images/icon-tinted.png',
     },
   },
