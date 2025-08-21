@@ -25,15 +25,9 @@ try {
   console.log('  • Run `pnpm start` to start the development server')
   console.log('  • Edit `src/app/index.tsx` to customize your app')
   console.log('  • Add your app assets to the `assets/` folder')
+
+  unlinkSync(__filename)
 } catch (error) {
   console.error('❌ Setup failed:', error)
   process.exit(1)
-} finally {
-  // Delete this setup script
-  try {
-    unlinkSync(__filename)
-    console.log('\n🧹 Cleaned up setup script')
-  } catch {
-    // Ignore if file doesn't exist or can't be deleted
-  }
 }
