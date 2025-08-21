@@ -52,16 +52,15 @@ A React Native app built with [Nativ](https://github.com/alloc/nativ), Expo, and
 ## Project Structure
 
 ```
-├── assets/          # Fonts, icons, images
+├── assets/           # Fonts, icons, images
 ├── src/
-│   ├── app/         # Expo Router pages
-│   ├── db/          # Drizzle ORM setup
-│   ├── assets.d.ts  # Asset type definitions
-│   ├── theme.ts     # Restyle theme
-│   └── ui.ts        # UI primitives
-├── app.json         # Expo configuration
+│   ├── app/          # Expo Router pages
+│   ├── db/           # Drizzle ORM setup
+│   ├── theme.ts      # Restyle theme
+│   └── ui.ts         # UI primitives
+├── app.config.ts     # Expo configuration
 ├── drizzle.config.ts # Database configuration
-└── tsconfig.json    # TypeScript configuration
+└── tsconfig.json     # TypeScript configuration
 ```
 
 ## Features
@@ -70,8 +69,8 @@ A React Native app built with [Nativ](https://github.com/alloc/nativ), Expo, and
 - ✅ **Restyle** - Type-safe styling system
 - ✅ **Drizzle ORM** - Type-safe database with SQLite
 - ✅ **TypeScript** - Strict type checking
-- ✅ **nativ** - Core utilities and components
 - ✅ **Moti** - Smooth animations
+- ✅ **Radashi** - Modern utility library
 - ✅ **Variable Fonts** - InterTight font family
 
 ## Customization
@@ -82,13 +81,13 @@ Edit `src/theme.ts` to customize colors, spacing, and typography.
 
 ### UI Components
 
-UI primitives are exported from `src/ui.ts` using the nativ library.
+UI primitives are exported from `src/ui.ts` using the nativ library. Import them from `~/ui`.
 
 ### Database
 
-- Schema: `src/db/schema.ts`
-- Client: `src/db/client.ts`
-- Migrations: `src/db/migrations.ts`
+- Schema: `~/db/schema`
+- Client: `~/db/client`
+- Migrations: `~/db/migrations`
 
 ### Assets
 
@@ -98,7 +97,7 @@ UI primitives are exported from `src/ui.ts` using the nativ library.
 
 ## Learn More
 
-- [nativ Documentation](../nativ/README.md)
+- [Nativ Documentation](https://github.com/alloc/nativ)
 - [Expo Documentation](https://docs.expo.dev/)
-- [Restyle Documentation](https://github.com/Shopify/restyle)
+- [Restyle Documentation](https://github.com/alloc/restyle)
 - [Drizzle Documentation](https://orm.drizzle.team/)
