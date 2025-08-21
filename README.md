@@ -1,27 +1,37 @@
 # My Nativ App
 
-A React Native app built with [nativ](../nativ/README.md), Expo, and modern tooling.
+A React Native app built with [Nativ](https://github.com/alloc/nativ), Expo, and modern tooling.
 
 ## Getting Started
 
-1. **Run the setup script:**
+1. **Clone the template and create your project:**
 
    ```bash
-   pnpm setup
+   git clone https://github.com/alloc/nativ-template my-project-name
+   cd my-project-name
+   ```
+
+2. **Run the setup script:**
+
+   > **Note:** Requires Node.js v23.6+ for TypeScript support
+
+   ```bash
+   node setup.ts
    ```
 
    This will:
+   - Recreate the git repository
    - Install all dependencies
    - Install nativ peer dependencies
    - Clean up the setup script
 
-2. **Start the development server:**
+3. **Start the development server:**
 
    ```bash
    pnpm start
    ```
 
-3. **Run on a platform:**
+4. **Run on a platform:**
    ```bash
    pnpm ios     # iOS
    pnpm android # Android
