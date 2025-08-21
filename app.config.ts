@@ -6,7 +6,6 @@ const expo: ExpoConfig = {
   version: '1.0.0',
   orientation: 'portrait',
   scheme: 'my-nativ-app',
-  userInterfaceStyle: 'light',
   assetBundlePatterns: ['**/*'],
   ios: {
     supportsTablet: true,
