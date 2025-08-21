@@ -6,10 +6,19 @@ import { basename } from 'path'
 console.log('🚀 Setting up your nativ app...\n')
 
 try {
-  // Recreate the git repository
   if (basename(import.meta.url) !== 'nativ-template') {
+    const checkpoint = execSync('git rev-parse HEAD', { stdio: 'pipe' })
+      .toString()
+      .slice(0, 8)
+
+    // Recreate the git repository.
     rmSync('.git', { recursive: true, force: true })
     execSync('git init', { stdio: 'inherit' })
+
+    // Tag the template so it can be upgraded.
+    execSync('git add .')
+    execSync(`git commit -m "chore: clone nativ-template@${checkpoint}"`)
+    execSync(`git tag nativ-template@${checkpoint}`)
   }
 
   // Install dependencies
