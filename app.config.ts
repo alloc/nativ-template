@@ -18,6 +18,7 @@ const expo: ExpoConfig = {
     },
   },
   android: {
+    package: 'com.example.mynativapp',
     adaptiveIcon: {
       foregroundImage: './assets/images/adaptive-icon.png',
       backgroundColor: '#ffffff',
