@@ -33,17 +33,7 @@ const expo: ExpoConfig = {
     'expo-router',
     'expo-font',
     'expo-sqlite',
-    [
-      'expo-build-properties',
-      {
-        ios: {
-          newArchEnabled: true,
-        },
-        android: {
-          newArchEnabled: true,
-        },
-      },
-    ],
+    ['expo-build-properties', {}],
     [
       'expo-splash-screen',
       {
