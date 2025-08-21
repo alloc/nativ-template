@@ -1,13 +1,18 @@
-#!/usr/bin/env tsx
-
 import { execSync } from 'child_process'
-import { unlinkSync } from 'fs'
+import { rmSync, unlinkSync } from 'fs'
+import { basename } from 'path'
 
 console.log('🚀 Setting up your nativ app...\n')
 
 try {
+  // Recreate the git repository
+  if (basename(__dirname) !== 'nativ-template') {
+    rmSync('.git', { recursive: true, force: true })
+    execSync('git init', { stdio: 'inherit' })
+  }
+
   // Install dependencies
-  console.log('📦 Installing dependencies...')
+  console.log('\n📦 Installing dependencies...')
   execSync('pnpm up -L', { stdio: 'inherit' })
 
   // Install nativ peer dependencies
