@@ -25,13 +25,22 @@ A React Native app built with [Nativ](https://github.com/alloc/nativ), Expo, and
    - Install nativ peer dependencies
    - Clean up the setup script
 
-3. **Start the development server:**
+3. **Customize your app metadata:**
+
+   Edit the following files to configure your app:
+   - **`package.json`**: Update app name, description, and other metadata
+   - **`app.json`**: Configure bundle identifier, native permissions, and Expo plugins
+   - **App Icon**: Place your app icon in `./assets/images/` folder
+
+   For app icon and splash screen guidance, see the [Expo documentation](https://docs.expo.dev/develop/user-interface/splash-screen-and-app-icon/).
+
+4. **Start the development server:**
 
    ```bash
    pnpm start
    ```
 
-4. **Run on a platform:**
+5. **Run on a platform:**
    ```bash
    pnpm ios     # iOS
    pnpm android # Android
