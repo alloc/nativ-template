@@ -8,7 +8,7 @@ console.log('🚀 Setting up your nativ app...\n')
 try {
   // Install dependencies
   console.log('📦 Installing dependencies...')
-  execSync('pnpm install', { stdio: 'inherit' })
+  execSync('pnpm up -L', { stdio: 'inherit' })
 
   // Install nativ peer dependencies
   console.log('\n🔧 Installing nativ peer dependencies...')

@@ -11,14 +11,14 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "nativ": "workspace:*"
+    "nativ": "latest"
   },
   "devDependencies": {
-    "@alloc/prettier-config": "^1.0.1",
-    "drizzle-kit": "^0.28.1",
-    "prettier": "^3.4.2",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "@alloc/prettier-config": "latest",
+    "drizzle-kit": "beta",
+    "prettier": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
   },
   "prettier": "@alloc/prettier-config"
 }
