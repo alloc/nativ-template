@@ -18,7 +18,6 @@ const expo: ExpoConfig = {
   },
   android: {
     package: 'com.example.mynativapp',
-    edgeToEdgeEnabled: true,
     adaptiveIcon: {
       foregroundImage: './assets/images/adaptive-icon.png',
       backgroundColor: '#ffffff',
