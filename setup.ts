@@ -1,5 +1,6 @@
 import { execSync } from 'child_process'
 import { rmSync, unlinkSync } from 'fs'
+import { fileURLToPath } from 'node:url'
 import { basename } from 'path'
 
 console.log('🚀 Setting up your nativ app...\n')
@@ -26,7 +27,7 @@ try {
   console.log('  • Edit `src/app/index.tsx` to customize your app')
   console.log('  • Add your app assets to the `assets/` folder')
 
-  unlinkSync(import.meta.url)
+  unlinkSync(fileURLToPath(import.meta.url))
 } catch (error) {
   console.error('❌ Setup failed:', error)
   process.exit(1)
