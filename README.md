@@ -7,7 +7,7 @@ A React Native app built with [Nativ](https://github.com/alloc/nativ), Expo, and
 1. **Clone the template and create your project:**
 
    ```bash
-   git clone https://github.com/alloc/nativ-template my-project-name
+   git clone https://github.com/alloc/nativ-template my-project-name --depth 1
    cd my-project-name
    ```
 
