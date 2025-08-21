@@ -6,7 +6,7 @@ console.log('🚀 Setting up your nativ app...\n')
 
 try {
   // Recreate the git repository
-  if (basename(__dirname) !== 'nativ-template') {
+  if (basename(import.meta.url) !== 'nativ-template') {
     rmSync('.git', { recursive: true, force: true })
     execSync('git init', { stdio: 'inherit' })
   }
@@ -26,7 +26,7 @@ try {
   console.log('  • Edit `src/app/index.tsx` to customize your app')
   console.log('  • Add your app assets to the `assets/` folder')
 
-  unlinkSync(__filename)
+  unlinkSync(import.meta.url)
 } catch (error) {
   console.error('❌ Setup failed:', error)
   process.exit(1)
