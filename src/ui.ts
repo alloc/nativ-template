@@ -1,5 +1,5 @@
 import { createPrimitives } from 'nativ/ui'
-import type { AppTheme } from './theme'
+import type { Theme } from './theme'
 
 export const {
   View,
@@ -9,4 +9,4 @@ export const {
   LinearGradient,
   ScrollView,
   Image,
-} = createPrimitives<AppTheme>()
+} = createPrimitives<Theme>()

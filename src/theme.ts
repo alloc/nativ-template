@@ -78,4 +78,4 @@ export const theme = createTheme({
   },
 })
 
-export type AppTheme = typeof theme
+export type Theme = typeof theme
