@@ -25,6 +25,8 @@ A React Native app built with [Nativ](https://github.com/alloc/nativ), Expo, and
    - Install nativ peer dependencies
    - Clean up the setup script
 
+   > **Note:** After dependencies are installed, you may need to run `pnpm approve-builds` to approve certain dev dependencies like esbuild and puppeteer.
+
 3. **Customize your app metadata:**
 
    Edit the following files to configure your app:
