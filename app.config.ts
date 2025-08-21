@@ -47,6 +47,7 @@ const expo: ExpoConfig = {
     ],
   ],
   experiments: {
+    reactCompiler: true,
     typedRoutes: true,
   },
 }
