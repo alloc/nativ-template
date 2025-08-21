@@ -1,23 +1,10 @@
 {
+  "extends": "expo/tsconfig.base.json",
   "include": ["src", ".expo/types/**/*.ts", "expo-env.d.ts"],
   "compilerOptions": {
     "paths": {
       "~/*": ["./src/*", "./assets/*"]
     },
-    "allowJs": true,
-    "esModuleInterop": true,
-    "jsx": "react-jsx",
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "skipLibCheck": true,
-    "target": "esnext",
-    "types": ["react-native/types/globals"],
-    "lib": ["esnext"],
-    "resolveJsonModule": true,
-    "verbatimModuleSyntax": true,
-    "noEmit": true,
-
-    // Strict mode
     "strict": true,
     "noErrorTruncation": true,
     "noUnusedLocals": true,
