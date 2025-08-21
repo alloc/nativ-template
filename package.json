@@ -16,9 +16,7 @@
     "@alloc/prettier-config": "latest",
     "@babel/core": "latest",
     "drizzle-kit": "beta",
-    "prettier": "latest",
-    "tsx": "latest",
-    "typescript": "latest"
+    "prettier": "latest"
   },
   "prettier": "@alloc/prettier-config"
 }
