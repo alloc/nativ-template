@@ -52,6 +52,16 @@ const expo: ExpoConfig = {
         },
       },
     ],
+    [
+      'expo-notifications',
+      {
+        icon: './assets/images/notification-icon.png',
+        color: '#ffffff',
+        defaultChannel: 'default',
+        sounds: ['./assets/sounds/notification_sound.wav'],
+        enableBackgroundRemoteNotifications: false,
+      },
+    ],
   ],
   experiments: {
     reactCompiler: true,
