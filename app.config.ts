@@ -15,6 +15,11 @@ const expo: ExpoConfig = {
       light: './assets/images/icon.png',
       tinted: './assets/images/icon-tinted.png',
     },
+    infoPlist: {
+      NSAppTransportSecurity: {
+        NSAllowsArbitraryLoads: process.env.NODE_ENV !== 'production',
+      },
+    },
   },
   android: {
     package: 'com.example.mynativapp',
