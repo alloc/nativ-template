@@ -1,3 +1,6 @@
-module.exports = {
-  presets: ['nativ/babel-preset'],
+module.exports = api => {
+  api.cache(true)
+  return {
+    presets: ['nativ/babel-preset'],
+  }
 }
