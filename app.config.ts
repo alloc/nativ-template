@@ -41,6 +41,7 @@ const expo: ExpoConfig = {
     'expo-sqlite',
     ['expo-build-properties', {}],
     [
+      // https://docs.expo.dev/versions/latest/sdk/splash-screen/#configurable-properties
       'expo-splash-screen',
       {
         image: './assets/images/splash.png',
@@ -53,6 +54,7 @@ const expo: ExpoConfig = {
       },
     ],
     [
+      // https://docs.expo.dev/versions/latest/sdk/notifications/#configurable-properties
       'expo-notifications',
       {
         icon: './assets/images/notification-icon.png',
