@@ -7,7 +7,9 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "android:clean": "expo prebuild -p android --clean",
+    "ios:clean": "expo prebuild -p ios --clean"
   },
   "dependencies": {
     "nativ": "latest"
