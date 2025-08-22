@@ -1,2 +1,1 @@
-const config = require('nativ/metro-config')
-module.exports = config
+module.exports = require('nativ/metro-config')(__dirname)
