@@ -24,3 +24,6 @@ export default function AppLayout() {
     </AppProvider>
   )
 }
+
+// Use the default error boundary from expo-router.
+export { ErrorBoundary } from 'expo-router'
