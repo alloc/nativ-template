@@ -60,7 +60,7 @@ const expo: ExpoConfig = {
         icon: './assets/images/notification-icon.png',
         color: '#ffffff',
         defaultChannel: 'default',
-        sounds: ['./assets/sounds/notification_sound.wav'],
+        sounds: ['./assets/sounds/notification.wav'],
         enableBackgroundRemoteNotifications: false,
       },
     ],
