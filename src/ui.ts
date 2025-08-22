@@ -5,8 +5,10 @@ export const {
   View,
   Text,
   MotiView,
+  MotiImage,
+  MotiScrollView,
+  MotiText,
   Pressable,
-  LinearGradient,
   ScrollView,
   Image,
 } = createPrimitives<Theme>()
