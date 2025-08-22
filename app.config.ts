@@ -50,6 +50,7 @@ const expo: ExpoConfig = {
   ],
   experiments: {
     reactCompiler: true,
+    tsconfigPaths: true,
     typedRoutes: true,
   },
 }
