@@ -15,11 +15,8 @@
     "nativ": "*"
   },
   "devDependencies": {
-    "@alloc/prettier-config": "*",
     "@babel/core": "*",
     "@types/node": "*",
-    "drizzle-kit": ">=1.0.0-beta",
-    "prettier": "*"
-  },
-  "prettier": "@alloc/prettier-config"
+    "drizzle-kit": ">=1.0.0-beta"
+  }
 }
