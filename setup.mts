@@ -1,5 +1,5 @@
 import { execSync } from 'child_process'
-import { rmSync, unlinkSync } from 'fs'
+import { readFileSync, rmSync, unlinkSync } from 'fs'
 import { fileURLToPath } from 'node:url'
 import { basename } from 'path'
 
@@ -21,7 +21,7 @@ try {
     execSync(`git tag nativ-template@${checkpoint}`)
   }
 
-  const pkg = require('./package.json')
+  const pkg = JSON.parse(readFileSync('./package.json', 'utf8'))
   const deps = Object.entries({
     ...pkg.dependencies,
     ...pkg.devDependencies,
