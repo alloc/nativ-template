@@ -21,9 +21,15 @@ try {
     execSync(`git tag nativ-template@${checkpoint}`)
   }
 
+  const pkg = require('./package.json')
+  const deps = Object.entries({
+    ...pkg.dependencies,
+    ...pkg.devDependencies,
+  }).map(([name, version]) => `${name}@"${version}"`)
+
   // Install dependencies
   console.log('\n📦 Installing dependencies...')
-  execSync('pnpm up -L', { stdio: 'inherit' })
+  execSync(`pnpm up ${deps.join(' ')}`, { stdio: 'inherit' })
 
   // Install nativ peer dependencies
   console.log('\n🔧 Installing nativ peer dependencies...')
