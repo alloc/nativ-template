@@ -1,5 +1,5 @@
 import { execSync } from 'child_process'
-import { readFileSync, rmSync, unlinkSync } from 'fs'
+import { rmSync, unlinkSync } from 'fs'
 import { fileURLToPath } from 'node:url'
 import { basename } from 'path'
 
@@ -21,15 +21,9 @@ try {
     execSync(`git tag nativ-template@${checkpoint}`)
   }
 
-  const pkg = JSON.parse(readFileSync('./package.json', 'utf8'))
-  const deps = Object.entries({
-    ...pkg.dependencies,
-    ...pkg.devDependencies,
-  }).map(([name, version]) => `${name}@"${version}"`)
-
   // Install dependencies
   console.log('\n📦 Installing dependencies...')
-  execSync(`pnpm up ${deps.join(' ')}`, { stdio: 'inherit' })
+  execSync('pnpm up -L', { stdio: 'inherit' })
 
   // Install nativ peer dependencies
   console.log('\n🔧 Installing nativ peer dependencies...')
