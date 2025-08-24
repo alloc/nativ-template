@@ -17,6 +17,7 @@
   "devDependencies": {
     "@alloc/prettier-config": "latest",
     "@babel/core": "latest",
+    "@types/node": "latest",
     "drizzle-kit": "beta",
     "prettier": "latest"
   },
