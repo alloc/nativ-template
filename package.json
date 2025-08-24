@@ -12,14 +12,14 @@
     "ios:clean": "expo prebuild -p ios --clean"
   },
   "dependencies": {
-    "nativ": "latest"
+    "nativ": "*"
   },
   "devDependencies": {
-    "@alloc/prettier-config": "latest",
-    "@babel/core": "latest",
-    "@types/node": "latest",
-    "drizzle-kit": "beta",
-    "prettier": "latest"
+    "@alloc/prettier-config": "*",
+    "@babel/core": "*",
+    "@types/node": "*",
+    "drizzle-kit": ">=1.0.0-beta",
+    "prettier": "*"
   },
   "prettier": "@alloc/prettier-config"
 }
